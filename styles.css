@@ -1,0 +1,104 @@
+:root{
+    --cod-gray: #090808;
+    --oslo-gray: #939597;
+    --rolling-stone: #7B8487;
+    --raven: #777B84;
+    --white: #E5E5E5;
+    
+    --sm: 1.6rem;
+    --md: 2.0rem;
+    --lg: 2.4rem;
+}
+html{
+    font-size: 62.5%;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--sm);
+}
+nav{
+    padding: 0 2.8rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--cod-gray);
+    align-items: center;
+
+}
+nav ul {
+    padding: 0;
+    margin: 0;
+    height: 6rem;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 2.8rem;
+}
+nav ul a {
+    text-decoration: none;
+    color: var(--rolling-stone);
+}
+figure{
+    margin: 0;
+    padding: 0;
+}
+.banner {
+    width: 100vw;
+    height: 30rem;
+    background-color: var(--cod-gray);
+}
+.banner-picture img{
+    width: 100vw;
+    height: 30rem;
+    object-fit: cover;
+}
+.profile-picture{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    border: 0.2rem solid var(--rolling-stone);
+    position: relative;
+    bottom: 14rem;
+    left: 1.8rem;
+    object-fit: cover;
+}
+.personal-data{
+    padding: 2.8rem;
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+}
+.name-container{
+    height: 10rem;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.name{
+    font-size: var(--lg);
+    text-align: center;
+}
+.information{
+    height: 37rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.social-networks{
+    display: flex;
+    justify-content: center;
+    gap: 2.4rem;
+    
+}
+.social-networks img{
+    width: 3rem;
+}
+.about{
+    padding: 2.8rem;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+
