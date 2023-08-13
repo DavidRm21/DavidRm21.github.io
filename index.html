@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Roboto:wght@300;500;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
-    <title>Portafolio</title>
+    <title>Presentacion</title>
 </head>
 <body>
     <nav class="navbar">
@@ -16,29 +16,37 @@
         </div>
         <div class="navbar-menu">
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Portafolio</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#portfolio">Portafolio</a></li>
+                <li><a href="#contact">Contacto</a></li>
             </ul>
         </div>
     </nav>
-    <header class="banner"> 
+    <header class="page-section banner" id="home"> 
         <figure class="banner-picture">
-            <img src="./assets/perif.jpg" alt="Banner">
+            <img src="./assets/52979.jpg" alt="Banner">
         </figure>
         <div class="information">
             <div class="personal-data">
                 <div class="name-container">
-                    <img src="./assets/working.png" class="profile-picture" alt="Foto de perfil">
+                    <img src="./assets/Gato.jpg" class="profile-picture" alt="Foto de perfil">
                     <h1 class="name">Cristian David Romero</h1>
                 </div>
                 <div class="social-networks">
-                    <img src="./assets/fblogo.png" alt="Facebook">
-                    <img src="./assets/instagram_1384015.png" alt="instagram">
-                    <img src="./assets/linkedinlogo.png" alt="Linkedin">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="./assets/Logos/fblogo.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="./assets/Logos/instagramLogo.png" alt="instagram"></a>
+                    <a href="https://github.com/DavidRm21" target="_blank"><img src="./assets/Logos/whatsappLogo.png" alt="Whatsapp"></a>
                 </div>
             </div>
+            
             <div class="about">
+                <div class="knowledge-carrusel">
+                    <img src="./assets/Logos/html-5.png" alt="html">
+                    <img src="./assets/Logos/css-3.png" alt="css">
+                    <img src="./assets/Logos/java.png" alt="java">
+                    <img src="./assets/Logos/python.png" alt="python">
+                    <img src="./assets/Logos/mysql.png" alt="mysql">
+                </div>
                 <p>Actualmente, se encuentra enfocado en su pasión, estudiando ingeniería de sistemas, un campo que le permite fusionar su creatividad con su amor por la tecnología.
                     Más allá de su carrera profesional, Cristian disfruta de paseos inspiradores, música vibrante y mantenerse al tanto de las últimas noticias tecnológicas. Su mentalidad flexible y receptiva le permite mejorar constantemente y seguir creciendo tanto en lo personal como en lo profesional.
                     Con su enfoque apasionado y determinación, Cristian David Romero aspira a contribuir significativamente al mundo de la tecnología, dejando una huella positiva en la sociedad y convirtiéndose en una inspiración para las generaciones futuras.</p>
@@ -46,12 +54,44 @@
         </div>
     </header>
     
-
-    <!-- <section class="page-section" id="portfolio">
+    <!-- Pagina del Portafolio  -->
+    <section class="page-section" id="portfolio">
         <div class="portfolio-container">
             <h2>Portafolio</h1>
+            <div class="projects">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </div>
-    </section> -->
+    </section>
+
+    <!-- Pagina del contacto -->
+    <section class="page-section" id="contact">
+        <div class="contact-container">
+            <h3>Contacto</h3>
+            <form action="/" class="form-container">
+                <label for="form-name">Nombre: </label>
+                <input type="text" id="form-name" name="form-name" required>
+
+                <label for="form-mail">Correo: </label>
+                <input type="text" id="form-mail" name="form-mail" required>
+
+                <label for="form-subject">Asunto: </label>
+                <input type="text" id="form-subject" name="form-subject" required>
+
+                <label for="form-message">Mensaje: </label>
+                <textarea type="text" id="form-message" name="form-message" rows="4" required></textarea>
+                
+                <button type="submit" disabled="true">Enviar</button>
+            </form>
+        </div>
+    </section>
 
 </body>
 </html>
