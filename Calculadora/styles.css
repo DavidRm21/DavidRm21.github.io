@@ -1,0 +1,100 @@
+:root{
+    --cod-gray: #090808;
+    --oslo-gray: #939597;
+    --rolling-stone: #7B8487;
+    --raven: #777B84;
+    --white: #E5E5E5;
+    
+    --sm: 1.6rem;
+    --md: 2.0rem;
+    --lg: 2.4rem;
+}
+html{
+    font-size: 62.5%;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--sm);
+}
+
+/* Opciones de cálculo */
+.main-container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.content-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2.8rem;
+}
+.options {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.options ul {
+    list-style: none;
+    text-decoration: none;
+}
+.options ul a{
+    text-decoration: none;
+}
+
+/* Calculadora */
+.calculator{
+    width: 40rem;
+    height: 55rem;
+    padding: 4rem;
+    background-color: var(--cod-gray);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.result-calculator{
+    width: 32rem;
+    height: 6rem;
+    padding: 1.2rem;
+    margin-bottom: 4rem;
+    border-radius: 1rem;
+    background-color: aquamarine;
+    color: var(--cod-gray);
+}
+.key-calculator{
+    width: 32rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-content: center;
+    gap: 1.2rem;
+}
+.key-calculator div{
+    width: 7rem;
+    height: 6rem;
+    color: var(--white);
+    background-color: #777B84;
+    gap: 1rem;
+    border-radius: 50%;
+    text-align: center;
+    padding: 25%;
+    font-size: var(--md);
+    cursor: pointer;
+}
+.key-calculator div:nth-child(1){
+    color: red;
+}
+.key-calculator div:nth-child(4n){
+    background-color: green;
+}
+
+/* Historial */
+.history{
+
+}
