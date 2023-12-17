@@ -1,81 +1,13 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Roboto:wght@300;500;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css">
-    <title>Presentacion</title>
-</head>
-<body>
-    
-    <header class="page-section banner" id="home"> 
-        <figure class="banner-picture">
-            <img src="./assets/bannerPer.png" alt="Banner">
-        </figure>
-    </header>
-
-    <nav class="navbar">
-        <div class="navbar-logo">
-            <img src="./assets/Logos/java.png" alt="Logo">
-        </div>
-        <div class="navbar-menu">
-            <ul>
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#portfolio">Portafolio</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-        </div>
-    </nav>
-    
-    <!-- Pagina del Portafolio  -->
-    <section class="page-section" id="portfolio">
-        <div class="portfolio-container">
-            <h2>Portafolio</h1>
-            <div class="projects">
-                <div><a href="./Calculadora/calculadora.html"><img src="./assets/working.png" alt="calculadora">Calculadora</a></div>
-                <div><a href="./Clon_Wikipedia/index.html"><img src="./assets/working.png" alt="Clon">Clon</div></a>
-                <div><img src="./assets/working.png" alt="Blog">Blog</div>
-                <div><img src="./assets/working.png" alt="calculadora">Calculadora</div>
-                <div><img src="./assets/working.png" alt="calculadora">Calculadora</div>
-                <div><img src="./assets/working.png" alt="calculadora">Calculadora</div>
-                <div><img src="./assets/working.png" alt="calculadora">Calculadora</div>
-                <div><img src="./assets/working.png" alt="calculadora">Calculadora</div>
-                <div><img src="./assets/working.png" alt="calculadora">Calculadora</div>
-                <div><img src="./assets/working.png" alt="calculadora">Calculadora</div>
-                
-            </div>
-        </div>
-    </section>
-
-    <!-- Pagina del contacto -->
-    <section class="page-section" id="contact">
-        <div class="contact-container">
-            <h3>Contacto</h3>
-            
-            <form action="/" class="form-container">
-                <label for="form-name">Nombre: </label>
-                <input type="text" id="form-name" name="form-name" required>
-
-                <label for="form-mail">Correo: </label>
-                <input type="text" id="form-mail" name="form-mail" required>
-
-                <label for="form-subject">Asunto: </label>
-                <input type="text" id="form-subject" name="form-subject" required>
-
-                <label for="form-message">Mensaje: </label>
-                <textarea type="text" id="form-message" name="form-message" rows="4" required></textarea>
-                
-                <button type="submit" class="button-submit">Enviar</button>
-            </form>
-        </div>
-    </section>
-
-    <footer class="footer-info">
-        <p>Derechos reservados 2023</p>
-    </footer>
-
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
